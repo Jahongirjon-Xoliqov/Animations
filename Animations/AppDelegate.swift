@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow()
-        window?.rootViewController = BubbleViewController(nibName: "BubbleViewController", bundle: nil)
+        window?.rootViewController = Friday.coordinator.createContainer(with: BubbleViewController(nibName: "BubbleViewController", bundle: nil))
         window?.makeKeyAndVisible()
         
         return true
