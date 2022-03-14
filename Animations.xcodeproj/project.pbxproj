@@ -22,6 +22,8 @@
 		C3721B1F27DEA46A007FC79D /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3721B1D27DEA46A007FC79D /* BaseViewController.xib */; };
 		C3721B2227DEA677007FC79D /* SnapshootViewCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3721B2027DEA677007FC79D /* SnapshootViewCVC.swift */; };
 		C3721B2327DEA677007FC79D /* SnapshootViewCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3721B2127DEA677007FC79D /* SnapshootViewCVC.xib */; };
+		C3DCD7A027DF0CB300D4A170 /* Temp4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCD79E27DF0CB300D4A170 /* Temp4ViewController.swift */; };
+		C3DCD7A127DF0CB300D4A170 /* Temp4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DCD79F27DF0CB300D4A170 /* Temp4ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		C3721B1D27DEA46A007FC79D /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		C3721B2027DEA677007FC79D /* SnapshootViewCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshootViewCVC.swift; sourceTree = "<group>"; };
 		C3721B2127DEA677007FC79D /* SnapshootViewCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnapshootViewCVC.xib; sourceTree = "<group>"; };
+		C3DCD79E27DF0CB300D4A170 /* Temp4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp4ViewController.swift; sourceTree = "<group>"; };
+		C3DCD79F27DF0CB300D4A170 /* Temp4ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Temp4ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			children = (
 				C3721B0C27DE905D007FC79D /* BubbleViewController.swift */,
 				C3721B0D27DE905D007FC79D /* BubbleViewController.xib */,
+				C3DCD79E27DF0CB300D4A170 /* Temp4ViewController.swift */,
+				C3DCD79F27DF0CB300D4A170 /* Temp4ViewController.xib */,
 			);
 			path = Bubbles;
 			sourceTree = "<group>";
@@ -162,6 +168,7 @@
 			files = (
 				C3721B1B27DEA2ED007FC79D /* Temp3ViewController.xib in Resources */,
 				C3721B1327DE9E1B007FC79D /* TempViewController.xib in Resources */,
+				C3DCD7A127DF0CB300D4A170 /* Temp4ViewController.xib in Resources */,
 				C3721B0F27DE905D007FC79D /* BubbleViewController.xib in Resources */,
 				C3721B2327DEA677007FC79D /* SnapshootViewCVC.xib in Resources */,
 				C3721B0427DE8FC0007FC79D /* LaunchScreen.storyboard in Resources */,
@@ -183,6 +190,7 @@
 				C3721B2227DEA677007FC79D /* SnapshootViewCVC.swift in Sources */,
 				C3721B1227DE9E1B007FC79D /* TempViewController.swift in Sources */,
 				C3721B1627DEA2DA007FC79D /* Temp2ViewController.swift in Sources */,
+				C3DCD7A027DF0CB300D4A170 /* Temp4ViewController.swift in Sources */,
 				C3721B1A27DEA2ED007FC79D /* Temp3ViewController.swift in Sources */,
 				C3721B1E27DEA46A007FC79D /* BaseViewController.swift in Sources */,
 			);

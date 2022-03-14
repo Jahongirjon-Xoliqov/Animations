@@ -1,5 +1,5 @@
 //
-//  Temp2ViewController.swift
+//  Temp4ViewController.swift
 //  Animations
 //
 //  Created by Administrator on 14/03/22.
@@ -7,19 +7,12 @@
 
 import UIKit
 
-class Temp2ViewController: UIViewController {
+class Temp4ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        view.backgroundColor = .systemPink
         // Do any additional setup after loading the view.
-        let tap = UITapGestureRecognizer(target: self, action: #selector(tapped))
-        view.addGestureRecognizer(tap)
-    }
-
-    @objc private func tapped() {
-        //Friday.coordinator.moveAsRoot(to: Temp3ViewController(nibName: "Temp3ViewController", bundle: nil), animate: true)
-        Friday.coordinator.push(to: Temp3ViewController())
     }
 
 

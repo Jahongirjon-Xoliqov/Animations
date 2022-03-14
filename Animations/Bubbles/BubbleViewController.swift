@@ -13,6 +13,13 @@ class BubbleViewController: UIViewController {
     
     private var animator: UIDynamicAnimator?
     
+    init() {
+        super.init(nibName: String(describing: type(of: self)), bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +53,7 @@ class BubbleViewController: UIViewController {
     }
 
 }
+
 
 class Friday: NSObject {
     
@@ -85,7 +93,7 @@ class Coordinator: NSObject {
     
     func magic() {
         let views = main.viewControllers.map { $0.view.snapshotView(afterScreenUpdates: true)!}
-        let vc = BaseViewController(nibName: "BaseViewController", bundle: nil)
+        let vc = BaseViewController()
         vc.views = views
         moveAsRoot(to: vc)
         

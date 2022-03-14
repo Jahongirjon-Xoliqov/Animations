@@ -19,6 +19,8 @@ class TempViewController: UIViewController {
 
     @objc private func tapped() {
         Friday.coordinator.push(to: Temp2ViewController(nibName: "Temp2ViewController", bundle: nil))
+        
+        
     }
 
     /*
