@@ -12,18 +12,11 @@
 		C3721B0427DE8FC0007FC79D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3721B0227DE8FC0007FC79D /* LaunchScreen.storyboard */; };
 		C3721B0E27DE905D007FC79D /* BubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3721B0C27DE905D007FC79D /* BubbleViewController.swift */; };
 		C3721B0F27DE905D007FC79D /* BubbleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3721B0D27DE905D007FC79D /* BubbleViewController.xib */; };
-		C3721B1227DE9E1B007FC79D /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3721B1027DE9E1B007FC79D /* TempViewController.swift */; };
-		C3721B1327DE9E1B007FC79D /* TempViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3721B1127DE9E1B007FC79D /* TempViewController.xib */; };
-		C3721B1627DEA2DA007FC79D /* Temp2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3721B1427DEA2DA007FC79D /* Temp2ViewController.swift */; };
-		C3721B1727DEA2DA007FC79D /* Temp2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3721B1527DEA2DA007FC79D /* Temp2ViewController.xib */; };
-		C3721B1A27DEA2ED007FC79D /* Temp3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3721B1827DEA2ED007FC79D /* Temp3ViewController.swift */; };
-		C3721B1B27DEA2ED007FC79D /* Temp3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3721B1927DEA2ED007FC79D /* Temp3ViewController.xib */; };
-		C3721B1E27DEA46A007FC79D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3721B1C27DEA46A007FC79D /* BaseViewController.swift */; };
-		C3721B1F27DEA46A007FC79D /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3721B1D27DEA46A007FC79D /* BaseViewController.xib */; };
-		C3721B2227DEA677007FC79D /* SnapshootViewCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3721B2027DEA677007FC79D /* SnapshootViewCVC.swift */; };
-		C3721B2327DEA677007FC79D /* SnapshootViewCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3721B2127DEA677007FC79D /* SnapshootViewCVC.xib */; };
-		C3DCD7A027DF0CB300D4A170 /* Temp4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCD79E27DF0CB300D4A170 /* Temp4ViewController.swift */; };
-		C3DCD7A127DF0CB300D4A170 /* Temp4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DCD79F27DF0CB300D4A170 /* Temp4ViewController.xib */; };
+		C3DCD7A427DFD87E00D4A170 /* Friday.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCD7A327DFD87E00D4A170 /* Friday.swift */; };
+		C3DCD7A627DFD9DA00D4A170 /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCD7A527DFD9DA00D4A170 /* BubbleView.swift */; };
+		C3DCD7A927DFDB8300D4A170 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCD7A827DFDB8300D4A170 /* Color+Extension.swift */; };
+		C3DCD7AD27DFE11800D4A170 /* Size+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCD7AC27DFE11800D4A170 /* Size+Extension.swift */; };
+		C3DCD7AF27DFE12D00D4A170 /* Rect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCD7AE27DFE12D00D4A170 /* Rect+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,18 +27,11 @@
 		C3721B0527DE8FC0007FC79D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3721B0C27DE905D007FC79D /* BubbleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleViewController.swift; sourceTree = "<group>"; };
 		C3721B0D27DE905D007FC79D /* BubbleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BubbleViewController.xib; sourceTree = "<group>"; };
-		C3721B1027DE9E1B007FC79D /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
-		C3721B1127DE9E1B007FC79D /* TempViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TempViewController.xib; sourceTree = "<group>"; };
-		C3721B1427DEA2DA007FC79D /* Temp2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp2ViewController.swift; sourceTree = "<group>"; };
-		C3721B1527DEA2DA007FC79D /* Temp2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Temp2ViewController.xib; sourceTree = "<group>"; };
-		C3721B1827DEA2ED007FC79D /* Temp3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp3ViewController.swift; sourceTree = "<group>"; };
-		C3721B1927DEA2ED007FC79D /* Temp3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Temp3ViewController.xib; sourceTree = "<group>"; };
-		C3721B1C27DEA46A007FC79D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		C3721B1D27DEA46A007FC79D /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
-		C3721B2027DEA677007FC79D /* SnapshootViewCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshootViewCVC.swift; sourceTree = "<group>"; };
-		C3721B2127DEA677007FC79D /* SnapshootViewCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnapshootViewCVC.xib; sourceTree = "<group>"; };
-		C3DCD79E27DF0CB300D4A170 /* Temp4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp4ViewController.swift; sourceTree = "<group>"; };
-		C3DCD79F27DF0CB300D4A170 /* Temp4ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Temp4ViewController.xib; sourceTree = "<group>"; };
+		C3DCD7A327DFD87E00D4A170 /* Friday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friday.swift; sourceTree = "<group>"; };
+		C3DCD7A527DFD9DA00D4A170 /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
+		C3DCD7A827DFDB8300D4A170 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		C3DCD7AC27DFE11800D4A170 /* Size+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Size+Extension.swift"; sourceTree = "<group>"; };
+		C3DCD7AE27DFE12D00D4A170 /* Rect+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rect+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,21 +64,13 @@
 		C3721AF627DE8FBE007FC79D /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				C3DCD7A727DFDB3800D4A170 /* Extensions */,
+				C3DCD7A227DFD86D00D4A170 /* Friday */,
 				C3721B0B27DE900C007FC79D /* Bubbles */,
 				C3721AF727DE8FBE007FC79D /* AppDelegate.swift */,
 				C3721B0027DE8FC0007FC79D /* Assets.xcassets */,
 				C3721B0227DE8FC0007FC79D /* LaunchScreen.storyboard */,
 				C3721B0527DE8FC0007FC79D /* Info.plist */,
-				C3721B1027DE9E1B007FC79D /* TempViewController.swift */,
-				C3721B1127DE9E1B007FC79D /* TempViewController.xib */,
-				C3721B1427DEA2DA007FC79D /* Temp2ViewController.swift */,
-				C3721B1527DEA2DA007FC79D /* Temp2ViewController.xib */,
-				C3721B1827DEA2ED007FC79D /* Temp3ViewController.swift */,
-				C3721B1927DEA2ED007FC79D /* Temp3ViewController.xib */,
-				C3721B1C27DEA46A007FC79D /* BaseViewController.swift */,
-				C3721B1D27DEA46A007FC79D /* BaseViewController.xib */,
-				C3721B2027DEA677007FC79D /* SnapshootViewCVC.swift */,
-				C3721B2127DEA677007FC79D /* SnapshootViewCVC.xib */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -102,10 +80,27 @@
 			children = (
 				C3721B0C27DE905D007FC79D /* BubbleViewController.swift */,
 				C3721B0D27DE905D007FC79D /* BubbleViewController.xib */,
-				C3DCD79E27DF0CB300D4A170 /* Temp4ViewController.swift */,
-				C3DCD79F27DF0CB300D4A170 /* Temp4ViewController.xib */,
+				C3DCD7A527DFD9DA00D4A170 /* BubbleView.swift */,
 			);
 			path = Bubbles;
+			sourceTree = "<group>";
+		};
+		C3DCD7A227DFD86D00D4A170 /* Friday */ = {
+			isa = PBXGroup;
+			children = (
+				C3DCD7A327DFD87E00D4A170 /* Friday.swift */,
+			);
+			path = Friday;
+			sourceTree = "<group>";
+		};
+		C3DCD7A727DFDB3800D4A170 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C3DCD7A827DFDB8300D4A170 /* Color+Extension.swift */,
+				C3DCD7AC27DFE11800D4A170 /* Size+Extension.swift */,
+				C3DCD7AE27DFE12D00D4A170 /* Rect+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,15 +161,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3721B1B27DEA2ED007FC79D /* Temp3ViewController.xib in Resources */,
-				C3721B1327DE9E1B007FC79D /* TempViewController.xib in Resources */,
-				C3DCD7A127DF0CB300D4A170 /* Temp4ViewController.xib in Resources */,
 				C3721B0F27DE905D007FC79D /* BubbleViewController.xib in Resources */,
-				C3721B2327DEA677007FC79D /* SnapshootViewCVC.xib in Resources */,
 				C3721B0427DE8FC0007FC79D /* LaunchScreen.storyboard in Resources */,
 				C3721B0127DE8FC0007FC79D /* Assets.xcassets in Resources */,
-				C3721B1F27DEA46A007FC79D /* BaseViewController.xib in Resources */,
-				C3721B1727DEA2DA007FC79D /* Temp2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,13 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3721B0E27DE905D007FC79D /* BubbleViewController.swift in Sources */,
+				C3DCD7AD27DFE11800D4A170 /* Size+Extension.swift in Sources */,
+				C3DCD7A927DFDB8300D4A170 /* Color+Extension.swift in Sources */,
+				C3DCD7A427DFD87E00D4A170 /* Friday.swift in Sources */,
+				C3DCD7AF27DFE12D00D4A170 /* Rect+Extension.swift in Sources */,
+				C3DCD7A627DFD9DA00D4A170 /* BubbleView.swift in Sources */,
 				C3721AF827DE8FBE007FC79D /* AppDelegate.swift in Sources */,
-				C3721B2227DEA677007FC79D /* SnapshootViewCVC.swift in Sources */,
-				C3721B1227DE9E1B007FC79D /* TempViewController.swift in Sources */,
-				C3721B1627DEA2DA007FC79D /* Temp2ViewController.swift in Sources */,
-				C3DCD7A027DF0CB300D4A170 /* Temp4ViewController.swift in Sources */,
-				C3721B1A27DEA2ED007FC79D /* Temp3ViewController.swift in Sources */,
-				C3721B1E27DEA46A007FC79D /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,10 @@ class BubbleViewController: UIViewController {
     
     private var animator: UIDynamicAnimator?
     
+    private var bubbles: [BubbleView] = []
+    
+    private var focusedBubble: BubbleView?
+    
     init() {
         super.init(nibName: String(describing: type(of: self)), bundle: nil)
     }
@@ -23,18 +27,23 @@ class BubbleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .orange
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        bubbles.append(BubbleView(radius: 50, center: CGPoint(x: 200, y: 200)))
+        bubbles.append(BubbleView(radius: 50, center: CGPoint(x: 200, y: 500)))
+     
+        bubbles.forEach { view.addSubview($0) }
+        
+        
         panGesture = UIPanGestureRecognizer(target: self, action: #selector(panIsTriggered(gesture:)))
-        if !isNil(panGesture) {
-            view.addGestureRecognizer(panGesture!)
-        }
+        view.addGestureRecognizer(panGesture!)
+        
         
         animator = UIDynamicAnimator(referenceView: view)
+        createBehaviors()
         
     }
     
@@ -42,67 +51,45 @@ class BubbleViewController: UIViewController {
         
         switch gesture.state {
         case .began:
-            Friday.coordinator.push(to: TempViewController(nibName: "TempViewController", bundle: nil))
-        case .changed: print("")
-        case .ended, .cancelled, .failed: print("")
+            
+            let touchPoint = gesture.location(in: view)
+            bubbles.forEach {
+                if $0.contains(touchPoint) {
+                    focusedBubble = $0
+                }
+            }
+        case .changed:
+            guard let focusedBubble = focusedBubble else {
+                return
+            }
+            
+            let translation = gesture.translation(in: view)
+            focusedBubble.move(to: translation)
+            
+            gesture.setTranslation(.zero, in: view)
+            
+        case .ended, .cancelled, .failed:
+            focusedBubble = nil
         case .possible: print("do not know what is this case ")
         @unknown default:
             fatalError()
         }
         
     }
-
-}
-
-
-class Friday: NSObject {
     
-    static let coordinator = Coordinator()
-    
-}
-
-class Coordinator: NSObject {
-    
-    private var main = UINavigationController()
-    
-    func createContainer(with vc: UIViewController) -> UINavigationController {
-        main.setViewControllers([vc], animated: false)
-        return main
-    }
-    
-    func push(to vc: UIViewController, animate: Bool = true) {
-        main.pushViewController(vc, animated: animate)
-    }
-    
-    func moveAsRoot(to vc: UIViewController, animate: Bool = true) {
-        main.viewControllers.insert(vc, at: 0)
-        main.popToRootViewController(animated: animate)
-    }
-    
-    func toRoot(animated: Bool = true) {
-        main.popToRootViewController(animated: animated)
-    }
-    
-    func vcsCount() -> Int {
-        main.viewControllers.count
-    }
-    
-    func insert(vc: UIViewController, at index: Int) {
-        main.viewControllers.insert(vc, at: index)
-    }
-    
-    func magic() {
-        let views = main.viewControllers.map { $0.view.snapshotView(afterScreenUpdates: true)!}
-        let vc = BaseViewController()
-        vc.views = views
-        moveAsRoot(to: vc)
+    private func createBehaviors() {
+        guard let animator = animator else {
+            return
+        }
+        
+        let collisionBehavior = UICollisionBehavior(items: bubbles)
+        collisionBehavior.translatesReferenceBoundsIntoBoundary = true
+        collisionBehavior.collisionMode = .everything
+        animator.addBehavior(collisionBehavior)
+        
+        let gravityBehavior = UIGravityBehavior(items: bubbles)
+        animator.addBehavior(gravityBehavior)
         
     }
-    
-}
 
-extension NSObject {
-    func isNil(_ value: Any?) -> Bool {
-        return value == nil
-    }
 }
