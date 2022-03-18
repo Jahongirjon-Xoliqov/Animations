@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C32DE67427E276DC00026D8C /* DropInOutTransitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DE67327E276DC00026D8C /* DropInOutTransitor.swift */; };
+		C32DE67727E278A800026D8C /* FormerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DE67527E278A800026D8C /* FormerViewController.swift */; };
+		C32DE67827E278A800026D8C /* FormerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32DE67627E278A800026D8C /* FormerViewController.xib */; };
+		C32DE67B27E2790200026D8C /* DroppableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DE67927E2790200026D8C /* DroppableViewController.swift */; };
+		C32DE67C27E2790200026D8C /* DroppableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32DE67A27E2790200026D8C /* DroppableViewController.xib */; };
+		C32DE67F27E27AC100026D8C /* ShadeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DE67E27E27AC100026D8C /* ShadeAnimator.swift */; };
+		C32DE68227E27B7800026D8C /* ShadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DE68027E27B7800026D8C /* ShadeViewController.swift */; };
+		C32DE68327E27B7800026D8C /* ShadeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32DE68127E27B7800026D8C /* ShadeViewController.xib */; };
+		C32DE68627E27BAB00026D8C /* ShadeFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DE68427E27BAB00026D8C /* ShadeFormViewController.swift */; };
+		C32DE68727E27BAB00026D8C /* ShadeFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32DE68527E27BAB00026D8C /* ShadeFormViewController.xib */; };
 		C3721AF827DE8FBE007FC79D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3721AF727DE8FBE007FC79D /* AppDelegate.swift */; };
 		C3721B0127DE8FC0007FC79D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3721B0027DE8FC0007FC79D /* Assets.xcassets */; };
 		C3721B0427DE8FC0007FC79D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3721B0227DE8FC0007FC79D /* LaunchScreen.storyboard */; };
@@ -20,6 +30,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C32DE67327E276DC00026D8C /* DropInOutTransitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropInOutTransitor.swift; sourceTree = "<group>"; };
+		C32DE67527E278A800026D8C /* FormerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormerViewController.swift; sourceTree = "<group>"; };
+		C32DE67627E278A800026D8C /* FormerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormerViewController.xib; sourceTree = "<group>"; };
+		C32DE67927E2790200026D8C /* DroppableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppableViewController.swift; sourceTree = "<group>"; };
+		C32DE67A27E2790200026D8C /* DroppableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DroppableViewController.xib; sourceTree = "<group>"; };
+		C32DE67E27E27AC100026D8C /* ShadeAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadeAnimator.swift; sourceTree = "<group>"; };
+		C32DE68027E27B7800026D8C /* ShadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadeViewController.swift; sourceTree = "<group>"; };
+		C32DE68127E27B7800026D8C /* ShadeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShadeViewController.xib; sourceTree = "<group>"; };
+		C32DE68427E27BAB00026D8C /* ShadeFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadeFormViewController.swift; sourceTree = "<group>"; };
+		C32DE68527E27BAB00026D8C /* ShadeFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShadeFormViewController.xib; sourceTree = "<group>"; };
 		C3721AF427DE8FBE007FC79D /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3721AF727DE8FBE007FC79D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3721B0027DE8FC0007FC79D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +65,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C32DE67227E2769100026D8C /* DropInOutAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C32DE67327E276DC00026D8C /* DropInOutTransitor.swift */,
+				C32DE67527E278A800026D8C /* FormerViewController.swift */,
+				C32DE67627E278A800026D8C /* FormerViewController.xib */,
+				C32DE67927E2790200026D8C /* DroppableViewController.swift */,
+				C32DE67A27E2790200026D8C /* DroppableViewController.xib */,
+			);
+			path = DropInOutAnimation;
+			sourceTree = "<group>";
+		};
+		C32DE67D27E27AAA00026D8C /* ShadeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C32DE67E27E27AC100026D8C /* ShadeAnimator.swift */,
+				C32DE68027E27B7800026D8C /* ShadeViewController.swift */,
+				C32DE68127E27B7800026D8C /* ShadeViewController.xib */,
+				C32DE68427E27BAB00026D8C /* ShadeFormViewController.swift */,
+				C32DE68527E27BAB00026D8C /* ShadeFormViewController.xib */,
+			);
+			path = ShadeAnimation;
+			sourceTree = "<group>";
+		};
 		C3721AEB27DE8FBE007FC79D = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +108,8 @@
 		C3721AF627DE8FBE007FC79D /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				C32DE67D27E27AAA00026D8C /* ShadeAnimation */,
+				C32DE67227E2769100026D8C /* DropInOutAnimation */,
 				C3DCD7A727DFDB3800D4A170 /* Extensions */,
 				C3DCD7A227DFD86D00D4A170 /* Friday */,
 				C3721B0B27DE900C007FC79D /* Bubbles */,
@@ -162,8 +208,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3721B0F27DE905D007FC79D /* BubbleViewController.xib in Resources */,
+				C32DE67C27E2790200026D8C /* DroppableViewController.xib in Resources */,
 				C3721B0427DE8FC0007FC79D /* LaunchScreen.storyboard in Resources */,
 				C3721B0127DE8FC0007FC79D /* Assets.xcassets in Resources */,
+				C32DE68727E27BAB00026D8C /* ShadeFormViewController.xib in Resources */,
+				C32DE68327E27B7800026D8C /* ShadeViewController.xib in Resources */,
+				C32DE67827E278A800026D8C /* FormerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,10 +226,16 @@
 			files = (
 				C3721B0E27DE905D007FC79D /* BubbleViewController.swift in Sources */,
 				C3DCD7AD27DFE11800D4A170 /* Size+Extension.swift in Sources */,
+				C32DE67F27E27AC100026D8C /* ShadeAnimator.swift in Sources */,
 				C3DCD7A927DFDB8300D4A170 /* Color+Extension.swift in Sources */,
+				C32DE68227E27B7800026D8C /* ShadeViewController.swift in Sources */,
 				C3DCD7A427DFD87E00D4A170 /* Friday.swift in Sources */,
 				C3DCD7AF27DFE12D00D4A170 /* Rect+Extension.swift in Sources */,
+				C32DE68627E27BAB00026D8C /* ShadeFormViewController.swift in Sources */,
+				C32DE67427E276DC00026D8C /* DropInOutTransitor.swift in Sources */,
+				C32DE67B27E2790200026D8C /* DroppableViewController.swift in Sources */,
 				C3DCD7A627DFD9DA00D4A170 /* BubbleView.swift in Sources */,
+				C32DE67727E278A800026D8C /* FormerViewController.swift in Sources */,
 				C3721AF827DE8FBE007FC79D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
