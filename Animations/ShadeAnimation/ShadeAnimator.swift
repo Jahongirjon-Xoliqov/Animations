@@ -140,7 +140,7 @@ class ShadeAnimator: UIDynamicBehavior
             
             animator.addBehavior(self)
             animator.delegate = self
-            animator.setValue(true, forKey: "debugEnabled")
+            //animator.setValue(true, forKey: "debugEnabled")
             self.action =
             { [weak self] in
                 guard let strongSelf = self else { return }
