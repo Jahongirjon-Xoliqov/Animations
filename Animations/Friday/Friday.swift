@@ -47,7 +47,13 @@ class Coordinator: NSObject {
 }
 
 extension NSObject {
+    
     func isNil(_ value: Any?) -> Bool {
         return value == nil
     }
+    
+    func log(_ v: String) {
+        print(v)
+    }
+    
 }

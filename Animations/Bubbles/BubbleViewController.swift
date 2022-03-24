@@ -33,6 +33,10 @@ class BubbleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let d = ++1++ +- ++1-- + 1-- - ++1
+        print(++d++)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -83,28 +87,32 @@ class BubbleViewController: UIViewController {
         
         switch gesture.state {
         case .began:
+            
             let touchPoint = gesture.location(in: view)
+            
             bubbles.forEach {
                 if $0.contains(touchPoint) {
                     focusedBubble = $0
                 }
             }
+            
             if let fbv = focusedBubble {
                 view.bringSubviewToFront(fbv)
                 
-                if(  self.attach != nil ) { self.animator!.removeBehavior(attach!); self.attach = nil; }
-
-
-                                self.attach = UIAttachmentBehavior(item: fbv, attachedToAnchor: touchPoint );
-                                self.animator!.addBehavior(self.attach!);
-                                self.attach!.damping = 1;
-                                self.attach!.length = 1;
+                if(self.attach != nil) {
+                    self.animator!.removeBehavior(attach!)
+                    self.attach = nil
+                }
+                
+                self.attach = UIAttachmentBehavior(item: fbv, attachedToAnchor: touchPoint )
+                self.animator!.addBehavior(self.attach!)
+                self.attach!.damping = 1
+                self.attach!.length = 1
 
             }
             
-            
-            
         case .changed:
+            
             guard let focusedBubble = focusedBubble else {
                 return
             }
@@ -113,10 +121,10 @@ class BubbleViewController: UIViewController {
             let location = gesture.location(in: view)
             
             self.attach!.anchorPoint = location;
-            
-            
             gesture.setTranslation(.zero, in: view)
+            
         case .ended, .cancelled, .failed:
+            
             if let _ = focusedBubble {
                 self.focusedBubble = nil
             }
@@ -126,18 +134,11 @@ class BubbleViewController: UIViewController {
                 self.attach = nil;
             }
             
-            
-            
-            
-        case .possible: print("do not know what is this case ")
+        case .possible:
+            print("do not know what is this case ")
         @unknown default:
             fatalError()
         }
-        
-    }
-    
-    private func createBehaviors() {
-        
         
     }
 
