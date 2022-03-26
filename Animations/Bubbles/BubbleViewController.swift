@@ -8,7 +8,11 @@
 import UIKit
 
 class BubbleViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var clickmeButton: CButton!
+    
+    
     private var panGesture: UIPanGestureRecognizer?
     
     private var animator: UIDynamicAnimator?
@@ -34,8 +38,12 @@ class BubbleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let d = ++1++ +- ++1-- + 1-- - ++1
-        print(++d++)
+        //let d = ++1++ +- ++1-- + 1-- - ++1
+        //print(++d++)
+        
+        
+        
+        //beginDrawing()
         
     }
     
@@ -83,6 +91,13 @@ class BubbleViewController: UIViewController {
         //animator.setValue(true, forKey: "debugEnabled")
     }
     
+    @IBAction func clickMeButtonTapped(_ sender: CButton) {
+        
+        sender.flipToRight()
+        
+    }
+    
+    
     @objc private func panIsTriggered(gesture: UIPanGestureRecognizer) {
         
         switch gesture.state {
@@ -113,11 +128,11 @@ class BubbleViewController: UIViewController {
             
         case .changed:
             
-            guard let focusedBubble = focusedBubble else {
+            guard focusedBubble != nil else {
                 return
             }
             
-            let translation = gesture.translation(in: view)
+            _ = gesture.translation(in: view)
             let location = gesture.location(in: view)
             
             self.attach!.anchorPoint = location;
@@ -143,3 +158,90 @@ class BubbleViewController: UIViewController {
     }
 
 }
+
+/*
+ 
+ 
+
+protocol Drawable {
+    func draw() -> String
+}
+
+struct Line: Drawable {
+    var elements: [Drawable]
+    func draw() -> String {
+        elements.map { $0.draw() }.joined(separator: "")
+    }
+}
+
+struct Space: Drawable {
+    func draw() -> String {
+        " "
+    }
+}
+
+struct Text: Drawable {
+    var content: String
+    init(_ content: String) { self.content = content }
+    func draw() -> String {
+        content
+    }
+}
+
+struct Stars: Drawable {
+    var length: Int
+    func draw() -> String { return String(repeating: "*", count: length) }
+}
+
+struct AllCaps: Drawable {
+    var content: Drawable
+    func draw() -> String { return content.draw().uppercased() }
+}
+
+@resultBuilder
+struct DrawingBuilder {
+    static func buildBlock(_ components: Drawable...) -> Drawable {
+        print(components.forEach { print($0) })
+        return Line(elements: components)
+    }
+}
+
+
+
+extension BubbleViewController {
+    
+    func beginDrawing() {
+        
+        let line = Line(elements: [
+        Stars(length: 3),
+        Text("Hello"),
+        Space(),
+        Text("World"),
+        Stars(length: 3)
+        ])
+        
+        log(line.draw())
+        
+        makeGreeting(for: "hey")
+    }
+    
+    func draw(@DrawingBuilder content: () -> Drawable) -> Drawable {
+        content()
+    }
+    
+    func makeGreeting(for name: String? = nil) {
+        
+        let line = draw {
+            Stars(length: 3)
+            Text("Hello")
+            Space()
+            Text("World")
+            Stars(length: 3)
+        }
+        
+        print(line.draw())
+    }
+    
+}
+
+*/
