@@ -23,6 +23,8 @@ extension Vector2D {
 }
 
 
+//let d = ++1++ +- ++1-- + 1-- - ++1
+//print(++d++)
 
 infix operator +- : AdditionPrecedence
 
